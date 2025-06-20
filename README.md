@@ -21,7 +21,7 @@ The board includes:
 - Per-key RGB
 - 1 I2C breakout ( for an OLED )
 - RJ45 split comms
-- 
+- Hot-swap sockets
 I Chose an RJ45 jack over the more common TRRS jack as it can be safely hotplugged while the board is on. I didn't want to have to handle a USBC plug, which also seemed like overkill and ran the risk of frying the keeb if it was used for anything other than split comms.
 
 <img width="976" alt="image" src="https://github.com/user-attachments/assets/bb0e66f1-6460-4b0a-8784-0e9e3b1e6da0" />
@@ -29,21 +29,22 @@ I Chose an RJ45 jack over the more common TRRS jack as it can be safely hotplugg
 
 The case is mostly 3D printed, but you can late lasercut for better asthetics and rigidity. This was my first time using fusion so it's just a little bit jank. It's kinda an open-air sorta sandiwch design, I mainly just wanted to always be able to see the PCB.
 
-BOM:
-|Item|Quantity|Price|Source|Additional details|
-|----|--------|-----|----|----------|
-|PCB |2x5     |39.99| JLCPCB | 23.6 subtotal + 12.14 shipping + 4.25 tax |
-|Plate|2      |35.67|SendCutSend|I Might be able to get it for cheaper locally, or in a diff material|
-|Orpheus Pico|2|N/A|Hack Club|Can be replaced with other USCB pico clone|
-|Kailh hot-swap socket|70|99c|Aliexpress|This is where the welcome deal seems to be placed right now |
-|RJ45 Jacks|2|2.63 | Aliexpress | |
-|RJ45 cable|1|1.72| Aliexpress | |
-|.91 in oled| 2.22| Aliexpress | |
-|1n4148 diodes|100|1.97| Aliexpress||
-|0805 0.1uf capacitor|100|2.2|Aliexpress||
-|SK6812mini-Es|100|6.26|Aliexpress||
-|TTC bluish white v2|60|32.7|TorontoKeyboardMan|<alt pick is otemu silent yellow jade (0.22) or silent kitty (0.45)| 
-|Keycaps | | | |
-|M2.5 x 25mm screw |50|2.28|Aliexpress||
-|M2.5x9mm spacer| 35 |2.78|Aliexpres|can also be 3d printed|
-|Total| | | |
+# BOM
+In case you want to try to build this yourself, here's the prices I got for all the components. Prices are all in USD, even though I'm in Canada.
+| Item                            | Quantity | Price      | Source             | Additional details                                                   |
+| ------------------------------- | -------- | ---------- | ------------------ | -------------------------------------------------------------------- |
+| PCB                             | 2x5      | 39.99      | JLCPCB             | 23.6 subtotal + 12.14 shipping + 4.25 tax                            |
+| Plate                           | 2        | 35.67      | SendCutSend        | I Might be able to get it for cheaper locally, or in a diff material |
+| Orpheus Pico                    | 2        | N/A        | Hack Club          | Can be replaced with other USCB pico clone                           |
+| Kailh hot-swap socket           | 70       | 99c        | Aliexpress         | This is where the welcome deal seems to be placed right now          |
+| RJ45 Jacks                      | 2        | 2.63       | Aliexpress         |                                                                      |
+| RJ45 cable                      | 1        | 1.72       | Aliexpress         |                                                                      |
+| .91 in oled                     | 2.22     | Aliexpress |                    |
+| 1n4148 diodes                   | 100      | 1.97       | Aliexpress         |                                                                      |
+| 0805 0.1uf capacitor            | 100      | 2.2        | Aliexpress         |                                                                      |
+| SK6812mini-Es                   | 100      | 6.26       | Aliexpress         |                                                                      |
+| TTC silent red or silent frozen | 60       | 32.7       | TorontoKeyboardMan | <alt pick is otemu silent yellow jade (0.22) or silent kitty (0.45)  |
+| Keycaps                         |          |            |                    |
+| M2.5 x 25mm screw               | 50       | 2.28       | Aliexpress         |                                                                      |
+| M2.5x9mm spacer                 | 35       | 2.78       | Aliexpres          | can also be 3d printed                                               |
+| Total                           |
