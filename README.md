@@ -44,7 +44,7 @@ In case you want to try to build this yourself, here's the prices I got for all 
 | 0805 0.1uf capacitor            | 100      | 2.2        | Aliexpress         |                                                                      |
 | SK6812mini-Es                   | 100      | 6.26       | Aliexpress         |                                                                      |
 | TTC silent red or silent frozen | 60       | 32.7       | TorontoKeyboardMan | <alt pick is otemu silent yellow jade (0.22) or silent kitty (0.45)  |
-| Keycaps                         |          |            |                    |
+| Keycaps                         | 140          |20.35            |Aliexpress                    |
 | M2.5 x 25mm screw               | 50       | 2.28       | Aliexpress         |                                                                      |
 | M2.5x9mm spacer                 | 35       | 2.78       | Aliexpres          | can also be 3d printed                                               |
-| Total                           |
+| Total                           | 1 | 149.54 | ||
