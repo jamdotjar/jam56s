@@ -30,7 +30,7 @@ I Chose an RJ45 jack over the more common TRRS jack as it can be safely hotplugg
 The case is mostly 3D printed, but you can late lasercut for better asthetics and rigidity. This was my first time using fusion so it's just a little bit jank. It's kinda an open-air sorta sandiwch design, I mainly just wanted to always be able to see the PCB.
 
 ## BOM
-In case you want to try to build this yourself, here's the prices I got for all the components. Prices are all in USD, even though I'm in Canada.
+In case you want to try to build this yourself, here's the prices I got for all the components. Prices are all in USD, even though I'm in Canada. ( also includes shipping )
 | Item                            | Quantity | Price      | Source             | Additional details                                                   |
 | ------------------------------- | -------- | ---------- | ------------------ | -------------------------------------------------------------------- |
 | PCB                             | 2x5      | 39.99      | JLCPCB             | 23.6 subtotal + 12.14 shipping + 4.25 tax                            |
