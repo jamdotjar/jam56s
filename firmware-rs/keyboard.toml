@@ -9,21 +9,33 @@ chip = "rp2040"
 [layout]
 rows = 4
 cols = 14
-layers = 2
+layers = 4
 keymap = [
     [
-        ["Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
-    ],
-    [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
-    ],
-]
+        ["GraveEscape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Space", "LT(3, Space)", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
+        ["Tab", "Q", "W", "E", "R", "T", "LGui", "MT(Space, LCtrl | LShift | LAlt)", "Y", "U", "I", "O", "P", "Enter"],
+        ["LT(2, LAlt)", "A", "S", "D", "F", "G", "_", "_", "H", "J", "K", "L", "Semicolon", "Quote"],
+        ["LShift", "Z", "X", "C", "V", "B", "_", "_", "N", "M", "Comma", "Dot", "Slash", "_"]
+        ],
+        [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+        ],
+        [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+        ],
+        [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+        ],
+    ]
 
 [storage]
 
@@ -36,21 +48,21 @@ cols = 7
 row_offset = 0
 col_offset = 0
 serial = [
-    { instance = "UART0", tx_pin = "PIN_17", rx_pin = "PIN_16" },
+    { instance = "UART0", tx_pin = "PIN_16", rx_pin = "PIN_17" }
 ]
 [split.central.matrix]
 matrix_type = "normal"
-input_pins = ["PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_6", "PIN_15"] // last col thumb cluster
-output_pins = ["PIN_7", "PIN_8", "PIN_9", "PIN_10"]
+output_pins = ["PIN_0", "PIN_1", "PIN_2", "PIN_3", "PIN_4", "PIN_5", "PIN_15"] # last col thumb cluster
+input_pins = ["PIN_7", "PIN_8", "PIN_9", "PIN_10"]
 
 [[split.peripheral]]
 rows = 4
 cols = 7
 row_offset = 0
 col_offset = 7
-serial = [{ instance = "UART0", tx_pin = "PIN_17", rx_pin = "PIN_16" }]
+serial = [{ instance = "UART0", tx_pin = "PIN_16", rx_pin = "PIN_17" }]
 [split.peripheral.matrix]
 matrix_type = "normal"
-input_pins = [, "PIN_14", "PIN_20", "PIN_21", "PIN_22", "PIN_26", "PIN_27", "PIN_28"] /// 1st col thumb cluster
-output_pins = ["PIN_19", "PIN_18", "PIN_15", "PIN_14"]
+output_pins = ["PIN_14", "PIN_20", "PIN_21", "PIN_22", "PIN_26", "PIN_27", "PIN_28"]
+input_pins = ["PIN_19", "PIN_18", "PIN_15", "PIN_13"]
 

@@ -1,0 +1,16 @@
+# RMK build stuff
+target/
+
+# QMK build stuff
+.build/
+*.o
+*.d
+
+# KiCad junk
+*-backups/
+_autosave-*
+*.lck
+fp-info-cache
+
+# DS store pissing me off
+.DS_Store
